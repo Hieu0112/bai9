@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_img"
+            android:src="@drawable/cat1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_name"
+                android:textSize="13dp"
+                android:text="Meo 1"
+                android:textColor="@color/grayblue"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_price"
+                android:textSize="11dp"
+                android:text="200.000"
+                android:textColor="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_desc"
+                android:textSize="11dp"
+                android:text="Linh Dong"
+                android:textColor="@color/grayblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/item_btRemove"
+            android:text="Remove"
+            android:background="@color/grayblue"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
